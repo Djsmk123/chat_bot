@@ -3,7 +3,7 @@
 import 'package:auto_route/auto_route.dart';
 import 'package:chat_with_us/core/routes/routes.gr.dart';
 import 'package:chat_with_us/core/utils/theme/theme.dart';
-import 'package:chat_with_us/core/widgets/primary_button.dart';
+
 import 'package:chat_with_us/features/auth/data/repo/auth_services.dart';
 import 'package:chat_with_us/features/chat/presentations/blocs/chat_bloc/chat_bloc.dart';
 import 'package:chat_with_us/features/chat/presentations/blocs/chat_bloc/chat_event.dart';
