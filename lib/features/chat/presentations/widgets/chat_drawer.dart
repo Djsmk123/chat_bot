@@ -3,6 +3,7 @@
 import 'package:auto_route/auto_route.dart';
 import 'package:chat_with_us/core/routes/routes.gr.dart';
 import 'package:chat_with_us/core/utils/theme/theme.dart';
+import 'package:chat_with_us/core/widgets/primary_button.dart';
 import 'package:chat_with_us/features/auth/data/repo/auth_services.dart';
 import 'package:chat_with_us/features/chat/presentations/blocs/chat_bloc/chat_bloc.dart';
 import 'package:chat_with_us/features/chat/presentations/blocs/chat_bloc/chat_event.dart';
@@ -107,14 +108,19 @@ class ChatHeaderWidget extends StatelessWidget {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              TextButton(
-                onPressed: () {
-                  context.read<ChatBloc>().add(ChatEventGetSessions());
-                },
+              Padding(
+                padding: EdgeInsets.symmetric(horizontal: 2.w),
                 child: Text(
                   'Logout',
-                  style: context.textTheme.copyWith(),
+                  style: context.textTheme.copyWith(
+                    color: context.isDarkMode() ? Colors.white : Colors.black,
+                    fontSize: context.fontSize(12),
+                    fontWeight: FontWeight.w600,
+                  ),
                 ),
+              ),
+              SizedBox(
+                width: 2.w,
               ),
               IconButton(
                 icon: const Icon(Icons.logout),

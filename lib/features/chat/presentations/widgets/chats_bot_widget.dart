@@ -43,8 +43,8 @@ class ChatsBotWidget extends StatelessWidget {
           //     state.chatSession?.messages.isNotEmpty == true)
           Positioned(
               bottom: 20.h,
-              left: isMobile ? 20.w : 0.35.sw,
-              right: isMobile ? 20.w : 0.35.sw,
+              left: isMobile ? 20.w : 0.2.sw,
+              right: isMobile ? 20.w : 0.2.sw,
               child: Column(
                 children: [
                   if (state.status == ChatState.loaded &&

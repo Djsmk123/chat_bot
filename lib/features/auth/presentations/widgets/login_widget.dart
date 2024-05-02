@@ -187,7 +187,8 @@ class LoginWidget extends StatelessWidget {
                   ),
                 ),
               ],
-            )
+            ),
+            SizedBox(height: 20.h),
           ],
         ),
       );

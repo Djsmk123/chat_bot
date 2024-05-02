@@ -12,7 +12,7 @@ class LoginState {
     this.password,
     required this.loginStatus,
     this.username,
-    this.passwordVisible = false,
+    this.passwordVisible = true,
   });
   factory LoginState.initial() {
     return LoginState(loginStatus: LoginStatus.login);
